@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Design.css">
+</head>
+<body>
+    <div class="text">
+        <h1>Calculator</h1>
+        <h3>Made By Humza Zaheer</h3>
+       </div>
+    <div class="container">
+       
+        <div class="calculator">
+            <form>
+            <div class="displayarea">
+                <input type="text" name="displayarea">
+            </div>
+            
+            <div class="firstrow">
+                <input type="button" value="AC" class="others" onclick="displayarea.value =''">
+                <input type="button" value="CE" class="others" onclick="displayarea.value =displayarea.value.toString().slice(0,-1)">
+                <input type="button" value="." class="others" onclick="displayarea.value +='.'">
+                <input type="button" value="/" class="operators" onclick="displayarea.value +='/'">
+            </div>
+            <div class="secondrow">
+                <input type="button" value="7" class="numbers" onclick="displayarea.value +='7'">
+                <input type="button" value="8" class="numbers" onclick="displayarea.value +='8'">
+                <input type="button" value="9" class="numbers" onclick="displayarea.value +='9'">
+                <input type="button" value="*" class="operators" onclick="displayarea.value +='*'">
+            </div>
+            <div class="thirdrow">
+                <input type="button" value="4" class="numbers" onclick="displayarea.value +='4'">
+                <input type="button" value="5" class="numbers" onclick="displayarea.value +='5'">
+                <input type="button" value="6" class="numbers" onclick="displayarea.value +='6'">
+                <input type="button" value="-" class="operators" onclick="displayarea.value +='-'">
+            </div>
+            <div class="fourthrow">
+                <input type="button" value="1" class="numbers" onclick="displayarea.value +='1'">
+                <input type="button" value="2" class="numbers" onclick="displayarea.value +='2'">
+                <input type="button" value="3" class="numbers" onclick="displayarea.value +='3'">
+                <input type="button" value="+" class="operators" onclick="displayarea.value +='+'">
+            </div>
+            <div class="fifthrow">
+                <input type="button" value="00" class="numbers" onclick="displayarea.value +='00'" >
+                <input type="button" value="0" class="numbers" onclick="displayarea.value +='0'">
+                <input type="button" value="=" class="equal" onclick="displayarea.value =eval(displayarea.value)">
+           </div></form>
+        </div>
+    </div>
+    
+</body>
+</html>

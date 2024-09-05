@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+.text{
+    background-color: rgba(74, 74, 74, 0.647);
+    text-align: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.container{
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ align-items:flex-start;
+ justify-content: center;
+ background-color: rgba(74, 74, 74, 0.647);
+}
+
+.calculator{
+    background-color: #1C1C1C;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.calculator form input{
+    font-size: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    margin:5px;
+    cursor:pointer ;
+    color: white;
+}
+
+.calculator form .displayarea{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px;
+    input{
+        text-align: right;
+        flex: 1;
+        background-color:#1C1C1C;
+        border-radius: 0%;
+        font-size: 45px;
+    }
+
+}
+.calculator form .equal{
+    width: 155px;
+    background-color: #505050;
+}
+.calculator form .equal:hover{
+    width: 155px;
+    background-color: #5050509a;
+}
+
+.calculator form {
+    .operators{
+        
+        background-color: #FF9500;
+    }
+    .numbers{
+    background-color: #505050;
+    }
+    .others{
+        color: black;
+        background-color: #D4D4D2;
+    }
+}
+
+.calculator form {
+    .operators:hover{
+        
+        background-color: #ff95008a;
+    }
+    .numbers:hover{
+    background-color: #5050509a;
+    }
+    .others:hover{
+        color: black;
+        background-color: #d4d4d28f;
+    }
+}
+
+.calculator form {
+    .operators:active{
+        
+        background-color: #7a4700;
+    }
+    .numbers:active{
+    background-color: #222222;
+    }
+    .others:active{
+        color: black;
+        background-color: #5c5c5c;
+    }
+}
+
+@media screen and (max-width: 519px) {
+    .calculator{
+        padding: 10px;
+    }
+    
+    .calculator form input{
+        height:60px;
+        width: 60px;
+        margin:5px;
+        font-size: 25px;
+    }
+    .calculator form .equal{
+        width:135px;
+    }
+}
